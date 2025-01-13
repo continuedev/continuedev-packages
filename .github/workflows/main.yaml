@@ -14,15 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: continuedev/continue-publish-action@v1.0.4
+      - uses: continuedev/continue-publish-action@v1.0.5
         with:
           api-key: ${{ secrets.TEST_CONTINUE_API_KEY }}
-          packages:
-            - slug: continuedev/python
-              path: packages/python.yaml
-
-            - slug: continuedev/typescript
-              path: packages/typescript.yaml
-
-            - slug: continuedev/recommended-models
-              path: packages/recommended-models.yaml
+          owner-slug: continuedev
+          paths: packages/**
