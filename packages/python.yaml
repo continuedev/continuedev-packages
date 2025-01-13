@@ -1,0 +1,5 @@
+name: Python
+version: 0.0.1
+
+rules:
+  - write good python

@@ -1,0 +1,5 @@
+name: TypeScript
+version: 0.0.1
+
+rules:
+  - write good typescript

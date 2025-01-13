@@ -1,0 +1,28 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - packages/**
+      - .github/workflows/main.yaml
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: continuedev/continue-publish-action
+        with:
+          api-key: ${{ secrets.TEST_CONTINUE_API_KEY }}
+          packages:
+            - slug: continuedev/python
+              path: packages/python.yaml
+
+            - slug: continuedev/typescript
+              path: packages/typescript.yaml
+
+            - slug: continuedev/recommended-models
+              path: packages/recommended-models.yaml
