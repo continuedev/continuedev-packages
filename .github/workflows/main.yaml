@@ -17,6 +17,6 @@ jobs:
       - uses: continuedev/continue-publish-action@v1.0.7
         with:
           api-key: ${{ secrets.TEST_CONTINUE_API_KEY }}
-          owner-slug: continuedev
+          owner-slug: nate-sesti
           paths: packages/**
           continue-api-domain: api-test.continue.dev
