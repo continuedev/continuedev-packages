@@ -19,3 +19,4 @@ jobs:
           api-key: ${{ secrets.TEST_CONTINUE_API_KEY }}
           owner-slug: continuedev
           paths: packages/**
+          continue-api-domain: api-test.continue.dev
