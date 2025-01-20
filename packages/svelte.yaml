@@ -1,0 +1,16 @@
+name: Svelte
+version: 0.0.1
+
+rules:
+  - Follow Svelte best practices
+  - Avoid manual DOM manipulation
+
+prompts:
+  - name: Write Jest
+    description: Write tests with Jest
+    prompt: Use Jest to write a comprehensive suite of tests for this component
+
+docs:
+  - name: Svelte docs
+    startUrl: https://svelte.dev/docs
+    rootUrl: https://svelte.dev/docs 

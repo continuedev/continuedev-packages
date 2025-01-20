@@ -1,0 +1,16 @@
+name: Flask
+version: 0.0.1
+
+rules:
+  - Follow Flask patterns
+  - Avoid using global state
+
+prompts:
+  - name: Write Flask tests
+    description: Write tests with Flask
+    prompt: Use Flask to write a comprehensive suite of tests for this application
+
+docs:
+  - name: Flask docs
+    startUrl: https://flask.palletsprojects.com/en/2.0.x/
+    rootUrl: https://flask.palletsprojects.com/en/2.0.x/ 

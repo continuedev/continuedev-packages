@@ -1,0 +1,16 @@
+name: Angular
+version: 0.0.1
+
+rules:
+  - Follow Angular style guide
+  - Avoid using ngOnChanges
+
+prompts:
+  - name: Write Jasmine
+    description: Write tests with Jasmine
+    prompt: Use Jasmine to write a comprehensive suite of tests for this component
+
+docs:
+  - name: Angular docs
+    startUrl: https://angular.io/docs
+    rootUrl: https://angular.io/docs 

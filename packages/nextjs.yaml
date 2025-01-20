@@ -1,0 +1,16 @@
+name: Next.js
+version: 0.0.1
+
+rules:
+  - Follow Next.js patterns
+  - Avoid client-only rendering
+
+prompts:
+  - name: Write Integration tests
+    description: Write integration tests for Next.js
+    prompt: Use Next.js to write a comprehensive suite of integration tests for this application
+
+docs:
+  - name: Next.js docs
+    startUrl: https://nextjs.org/docs
+    rootUrl: https://nextjs.org/docs 

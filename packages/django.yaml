@@ -1,0 +1,16 @@
+name: Django
+version: 0.0.1
+
+rules:
+  - Follow Django style guide
+  - Avoid using raw queries
+
+prompts:
+  - name: Write Django tests
+    description: Write tests with Django
+    prompt: Use Django to write a comprehensive suite of tests for this application
+
+docs:
+  - name: Django docs
+    startUrl: https://docs.djangoproject.com/en/stable/
+    rootUrl: https://docs.djangoproject.com/en/stable/ 

@@ -1,0 +1,16 @@
+name: Laravel
+version: 0.0.1
+
+rules:
+  - Follow Laravel conventions
+  - Avoid using raw SQL
+
+prompts:
+  - name: Write Feature tests
+    description: Write tests with Laravel
+    prompt: Use Laravel to write a comprehensive suite of feature tests for this application
+
+docs:
+  - name: Laravel docs
+    startUrl: https://laravel.com/docs
+    rootUrl: https://laravel.com/docs 
