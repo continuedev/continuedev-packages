@@ -94,3 +94,11 @@ docs:
 
   - name: Matplotlib
     startUrl: https://matplotlib.org/stable/
+
+context:
+  - uses: docs
+  - uses: diff
+  - uses: web
+  - uses: url
+  - uses: folder
+  - uses: terminal
