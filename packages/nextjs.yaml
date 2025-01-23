@@ -36,28 +36,20 @@ rules:
 docs:
   - name: Next.js
     startUrl: https://nextjs.org/docs
-    rootUrl: https://nextjs.org/docs
   - name: Tailwind CSS
     startUrl: https://tailwindcss.com/docs
-    rootUrl: https://tailwindcss.com/docs
   - name: React
     startUrl: https://react.dev/
-    rootUrl: https://react.dev/
   - name: Prisma
     startUrl: https://www.prisma.io/docs
-    rootUrl: https://www.prisma.io/docs
   - name: TanStack Query
     startUrl: https://tanstack.com/query/
-    rootUrl: https://tanstack.com/query/
   - name: React Hook Form
     startUrl: https://react-hook-form.com/
-    rootUrl: https://react-hook-form.com/
   - name: Zod
     startUrl: https://zod.dev/
-    rootUrl: https://zod.dev/
   - name: Shadcn UI
     startUrl: https://ui.shadcn.com/docs
-    rootUrl: https://ui.shadcn.com/docs
 
 context:
   - uses: docs
