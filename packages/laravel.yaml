@@ -58,6 +58,13 @@ prompts:
       Use Laravel Mix in your testing workflow for asset handling and ensure efficient indexing for database operations tested within your suite. Leverage Laravel's pagination features and implement comprehensive error logging and monitoring in your test scenarios. Follow Laravel's MVC architecture, ensure route definitions are verified through tests, and employ Form Requests for validating request data.
       Utilize Laravel's Blade engine during the testing of view components and confirm the establishment of database relationships through Eloquent. Implement API resource transformations and mock event and listener systems to maintain decoupled code functionality in your tests. Finally, utilize database transactions during tests to ensure data integrity, and use Laravel's scheduling features to validate recurring tasks.
 
+  - name: Analyze Laravel Code
+    description: Analyze Laravel Code
+    prompt: |
+      Analyze the attached Laravel code and provide a detailed explanation of its structure, functionality, and any potential improvements or optimizations that could be made.
+      Provide a comprehensive overview of the code's purpose, including any specific requirements or constraints it addresses.
+      Identify any potential areas of improvement, such as code refactoring, performance enhancements, or architectural improvements.
+
 docs:
-  - name: Laravel docs
+  - name: Laravel 11.x
     startUrl: https://laravel.com/docs/11.x/readme
