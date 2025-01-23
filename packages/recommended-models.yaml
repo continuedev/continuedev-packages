@@ -5,3 +5,6 @@ packages:
   - uses: anthropic/claude-3-5-sonnet
     with:
       temperature: 0.75
+  - uses: mistral/codestral
+    with:
+      temperature: 0.95
