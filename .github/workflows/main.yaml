@@ -16,6 +16,6 @@ jobs:
 
       - uses: continuedev/continue-publish-action@v1
         with:
-          api-key: ${{ secrets.TEST_CONTINUE_API_KEY }}
+          api-key: ${{ secrets.CONTINUE_API_KEY }}
           owner-slug: continuedev
           paths: packages/**
