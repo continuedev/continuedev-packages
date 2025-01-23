@@ -1,0 +1,9 @@
+name: Claude 3.5 Sonnet
+version: 0.0.1
+
+models:
+  - name: Claude 3.5 Sonnet
+    provider: anthropic
+    model: claude-3-5-sonnet
+    defaultCompletionOptions:
+      temperature: ${{ params.temperature }}
