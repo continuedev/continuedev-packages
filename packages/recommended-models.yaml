@@ -1,2 +1,7 @@
 name: Recommended Models
 version: 0.0.1
+
+packages:
+  - uses: anthropic/claude-3-5-sonnet
+    with:
+      temperature: 0.75
