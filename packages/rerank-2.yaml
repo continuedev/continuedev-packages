@@ -1,0 +1,10 @@
+name: rerank-2
+version: 0.0.1
+
+models:
+  - name: rerank-2
+    provider: voyage
+    model: rerank-2
+    apiKey: ${{ secrets.VOYAGE_API_KEY }}
+    roles:
+      - rerank

@@ -1,0 +1,10 @@
+name: voyage-code-3
+version: 0.0.1
+
+models:
+  - name: voyage-code-3
+    provider: voyage
+    model: voyage-code-3
+    apiKey: ${{ secrets.VOYAGE_API_KEY }}
+    roles:
+      - embed
