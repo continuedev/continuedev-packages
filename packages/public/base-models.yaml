@@ -1,0 +1,8 @@
+name: Continue base models
+version: 0.0.1
+
+packages:
+  - uses: continuedev/claude-3-5-sonnet
+  - uses: continuedev/codestral
+  - uses: continuedev/voyage-code-3
+  - uses: continuedev/rerank-2
