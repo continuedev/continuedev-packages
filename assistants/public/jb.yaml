@@ -1,0 +1,6 @@
+name: Continue JetBrains extension assistant
+version: 0.0.1
+
+packages:
+  - uses: continuedev/base-models
+  - uses: continuedev/base-context-jb
