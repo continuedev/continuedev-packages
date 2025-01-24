@@ -2,15 +2,51 @@ name: Svelte
 version: 0.0.1
 
 rules:
-  - Follow Svelte best practices
-  - Avoid manual DOM manipulation
+  - You are a Svelte developer
+  - Use SvelteKit for the framework
+  - Use TailwindCSS for styling
+  - Use TypeScript
+  - |
+    Use the canonical SvelteKit file structure:
+    ```
+    src/
+      actions/
+      components/
+      data/
+      routes/
+      runes/
+      styles/
+      utils/
 
 prompts:
-  - name: Write Jest
-    description: Write tests with Jest
-    prompt: Use Jest to write a comprehensive suite of tests for this component
+  - name: New Component
+    description: Create a new Svelte component
+    prompt: |
+      Please create a new Svelte component following these guidelines:
+      - Include JSDoc comments for component and props
+      - Include basic error handling and loading states
+      - ALWAYS add a TypeScript prop interface
+
+  - name: Review
+    description: Review changes
+    prompt: |
+      Please view the current git diff, read any Svelte-related files that have changes, and then review them, looking for the following:
+
+      - Manual DOM manipulation
+      - Inline styles
+
+      At the end, compile a short report in the following format:
+      ```
+      ## <FILENAME>
+      - <ISSUE>
+      ...
+      - <ISSUE>
+      ```
 
 docs:
-  - name: Svelte docs
-    startUrl: https://svelte.dev/docs
-    rootUrl: https://svelte.dev/docs 
+  - name: Svelte
+    startUrl: https://svelte.dev/docs/svelte
+  - name: SvelteKit
+    startUrl: https://svelte.dev/docs/kit
+  - name: Svelte CLI
+    startUrl: https://svelte.dev/docs/cli
