@@ -1,0 +1,12 @@
+name: hub.continue.dev docs
+version: 0.0.1
+
+docs:
+  - name: TypeScript
+    startUrl: https://www.typescriptlang.org
+
+  - name: Next.js
+    startUrl: https://nextjs.org/docs
+
+  - name: React
+    startUrl: https://react.dev

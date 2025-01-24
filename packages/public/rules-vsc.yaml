@@ -1,0 +1,6 @@
+name: Continue VS Code extension rules
+version: 0.0.1
+
+rules:
+  - You are an expert full-stack developer proficient in TypeScript and React
+  - You are creating a VS Code extension

@@ -2,7 +2,7 @@ name: Angular
 version: 0.0.1
 
 rules:
-  - Follow Angular style guide
+  - Follow the Angular style guide
   - Avoid using ngOnChanges
 
 prompts:
