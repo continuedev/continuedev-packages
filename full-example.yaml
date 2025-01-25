@@ -1,0 +1,106 @@
+# This whole file is the config.yaml that defines an "assistant"
+name: Full example of assistant in block paradigm
+version: 0.0.1
+
+# This is a "section" (the "models" section)
+models:
+  # This is an "?imported? block"
+  - uses: openai/gpt-4o
+    with:
+      apiKey: ${{ secrets.OPENAI_API_KEY }}
+    override:
+      roles:
+        - apply
+
+  # This is a "?native? block"
+  - name: Sonnet
+    provider: anthropic
+    model: claude-3-5-sonnet-latest
+    apiKey: ${{ secrets.ANTHROPIC_API_KEY }}
+    roles:
+      - chat
+      - edit
+
+  - uses: ollama/deepseek-r1
+    override:
+      roles:
+        - chat
+
+  - uses: mistral/codestral
+    with:
+      apiKey: ${{ secrets.MISTRAL_API_KEY }}
+    override:
+      roles:
+        - autocomplete
+
+docs:
+  - uses: dlthub/docs
+  - uses: continuedev/user-guide
+  - name: Python Docs
+    startUrl: https://docs.python.org/3/
+
+rules:
+  - Be concise
+  - Be kind
+  - uses: python/pep8-rules
+  # Note that no overrides would be possible here since rule blocks have no fields.
+  # It's a special case of being a string rather than an object
+
+context:
+  - provider: web # Is "provider" the right name for this?
+    params: # We can use "with" to stay consistent or "params" to make it clear this is a different thing
+      n: 5
+  - provider: greptile # https://docs.continue.dev/customize/context-providers#greptile
+    params:
+      GreptileToken: ${{ secrets.GREPTILE_TOKEN }}
+      GithubToken: ${{ secrets.GITHUB_TOKEN }}
+  - uses: sentry/recent-issues
+    with:
+      SENTRY_PROJECT_ID: 1234567890abcdef
+      SENTRY_API_KEY: ${{ secrets.SENTRY_API_KEY }}
+
+data:
+  - destination: https://ingest-dev-data.mistral.ai/my-username
+    levels:
+      - autocomplete:*
+      - thumbs:*
+  - uses: mistral/dev-data
+    with:
+      username: my-username
+
+prompts:
+  - name: API route inspection
+    description: Analyzes API routes for security issues
+    prompt: Review this API route for security vulnerabilities. Ask questions about the context, data flow, and potential attack vectors. Be thorough in your investigation.
+
+  - uses: nextjs/auth-review
+
+tools:
+  - name: Lint
+    description: Run this tool when you want to lint code to check for errors. You should do so after any large changes
+    run: npm run lint
+  - name: Create changlog item
+    description: Create a new changelog item for the latest release. You should do so after any significant changes that end users would want to know about
+    params:
+      type: object
+      properties:
+        body:
+          type: string
+          description: The body of the changelog item
+      required:
+        - body
+    run: changie new -b $body
+  - uses: github/check-actions-status
+    with:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+mcpServers:
+  - name: Tutorial Server
+    command: uvx
+    args:
+      - mcp-server-sqlite
+      - --db-path
+      - ~/test.db
+  - uses: brave/web-search # https://opentools.com/registry/brave-search-ref
+    with:
+      BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
