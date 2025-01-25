@@ -33,6 +33,10 @@ models:
       roles:
         - autocomplete
 
+  - uses: voyageai/voyage-code-3
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
 docs:
   - uses: dlthub/docs
   - uses: continuedev/user-guide
