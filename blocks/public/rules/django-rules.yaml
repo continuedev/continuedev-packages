@@ -1,0 +1,10 @@
+name: Django Rules
+version: 0.0.1
+rules:
+  - |
+    Follow Django style guide
+    Avoid using raw queries
+    Prefer the Django REST Framework for API development
+    Prefer Celery for background tasks
+    Prefer Redis for caching and task queues
+    Prefer PostgreSQL for production databases

@@ -1,0 +1,5 @@
+name: Django Documentation
+version: 0.0.1
+docs:
+  - name: Django
+    startUrl: https://docs.djangoproject.com/en/stable/

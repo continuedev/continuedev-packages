@@ -1,0 +1,14 @@
+name: Nuxt.js Rules
+version: 0.0.1
+rules:
+  - |
+    Follow Nuxt.js 3 patterns and correctly use server and client components.
+    Use Nuxt UI for components and styling (built on top of Tailwind CSS).
+    Use VueUse for utility composables.
+    Use Pinia for state management.
+    Use Vee-Validate + Zod for form handling and validation.
+    Use Nuxt DevTools for debugging.
+    Use Vue Query (TanStack) for complex data fetching scenarios.
+    Use Prisma for database access.
+    Follow Vue.js Style Guide for code formatting.
+    Use script setup syntax for components.

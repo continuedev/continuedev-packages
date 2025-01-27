@@ -1,0 +1,7 @@
+name: Tailwind Getting Started
+version: 0.0.1
+docs:
+  - title: Getting Started with Tailwind CSS
+    content: |
+      Tailwind CSS is a utility-first CSS framework that provides low-level utility classes
+      to build custom designs directly in your markup.

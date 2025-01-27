@@ -1,0 +1,16 @@
+name: Svelte Rules
+version: 0.0.1
+rules:
+  - |
+    Use SvelteKit for the framework
+    Use TailwindCSS for styling
+    Use TypeScript
+    Use the canonical SvelteKit file structure:
+      src/
+        actions/
+        components/
+        data/
+        routes/
+        runes/
+        styles/
+        utils/

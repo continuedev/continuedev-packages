@@ -1,0 +1,15 @@
+name: Next.js Rules
+version: 0.0.1
+rules:
+  - |
+    Follow Next.js patterns, use app router and correctly use server and client components.
+    Use Tailwind CSS for styling.
+    Use Shadcn UI for components.
+    Use TanStack Query (react-query) for frontend data fetching.
+    Use React Hook Form for form handling.
+    Use Zod for validation.
+    Use React Context for state management.
+    Use Prisma for database access.
+    Follow AirBnB style guide for code formatting.
+    Use PascalCase when creating new React files. UserCard, not user-card.
+    Use named exports when creating new react components.

@@ -1,0 +1,5 @@
+name: PyTorch nn Documentation
+version: 0.0.1
+docs:
+  - name: torch.nn Docs
+    startUrl: https://pytorch.org/docs/stable/nn.html

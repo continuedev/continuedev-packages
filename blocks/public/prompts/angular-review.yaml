@@ -1,0 +1,14 @@
+name: Angular Code Review
+version: 0.0.1
+prompts:
+  - name: angular-review
+    description: Performs a comprehensive review of Angular code
+    prompt: |
+      Review this Angular code for:
+      - Best practices and patterns
+      - Performance considerations
+      - Common pitfalls
+      - Component architecture
+      - TypeScript usage
+      - Dependency injection
+      Provide specific recommendations for improvements.

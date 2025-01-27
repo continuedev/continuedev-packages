@@ -1,0 +1,13 @@
+name: Next.js Documentation
+version: 0.0.1
+docs:
+  - name: Next.js
+    startUrl: https://nextjs.org/docs
+  - name: NextJS Core Concepts
+    content: |
+      NextJS is a React framework that enables features like server-side rendering 
+      and static site generation. Key concepts include:
+      - Pages and Routing
+      - Data Fetching
+      - Static and Dynamic Rendering
+      - API Routes

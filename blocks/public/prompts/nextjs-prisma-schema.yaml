@@ -1,0 +1,11 @@
+name: NextJS Prisma Schema Generator
+version: 0.0.1
+prompts:
+  - name: Generate Prisma Schema
+    description: Generates a Prisma schema file for a NextJS application
+    prompt: |
+      Create a Prisma schema file that defines the following:
+      - Database provider configuration
+      - Data models based on the requirements
+      - Appropriate relationships between models
+      - Necessary field types and attributes

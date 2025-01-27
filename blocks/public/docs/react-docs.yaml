@@ -1,0 +1,8 @@
+name: react-component-basics
+version: 0.0.1
+docs:
+  - title: React Component Basics
+    content: |
+      React components are the building blocks of React applications.
+      They are reusable pieces of code that return React elements.
+      Components can be either function components or class components.
