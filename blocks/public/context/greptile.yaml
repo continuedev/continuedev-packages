@@ -1,0 +1,8 @@
+name: Greptile Context
+version: 0.0.1
+
+context:
+  - provider: greptile
+    params:
+      GreptileToken: ${{ inputs.GREPTILE_TOKEN }}
+      GithubToken: ${{ inputs.GITHUB_TOKEN }}

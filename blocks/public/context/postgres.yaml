@@ -1,0 +1,12 @@
+name: Postgres Context
+version: 0.0.1
+
+context:
+  - provider: postgres
+    params:
+      host: ${{ inputs.POSTGRES_HOST }}
+      port: ${{ inputs.POSTGRES_PORT }}
+      user: ${{ inputs.POSTGRES_USER }}
+      password: ${{ inputs.POSTGRES_PASSWORD }}
+      database: ${{ inputs.POSTGRES_DATABASE }}
+      schema: ${{ inputs.POSTGRES_SCHEMA }}

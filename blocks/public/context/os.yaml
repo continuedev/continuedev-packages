@@ -1,0 +1,5 @@
+name: OS Context
+version: 0.0.1
+
+context:
+  - provider: os

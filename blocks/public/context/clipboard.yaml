@@ -1,0 +1,5 @@
+name: Clipboard Context
+version: 0.0.1
+
+context:
+  - provider: clipboard

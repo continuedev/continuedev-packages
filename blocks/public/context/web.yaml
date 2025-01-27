@@ -1,0 +1,5 @@
+name: Web Context
+version: 0.0.1
+
+context:
+  - provider: web

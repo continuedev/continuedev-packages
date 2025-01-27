@@ -1,0 +1,9 @@
+name: Discord Context
+version: 0.0.1
+
+context:
+  - provider: discord
+    params:
+      discordKey: ${{ inputs.DISCORD_KEY }}
+      guildId: ${{ inputs.GUILD_ID }}
+      channels: ${{ inputs.CHANNELS }}

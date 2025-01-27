@@ -1,0 +1,7 @@
+name: GitLab MR Context
+version: 0.0.1
+
+context:
+  - provider: gitlab-mr
+    params:
+      token: ${{ inputs.GITLAB_TOKEN }}

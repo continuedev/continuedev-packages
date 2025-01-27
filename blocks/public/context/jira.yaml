@@ -1,0 +1,8 @@
+name: Jira Context
+version: 0.0.1
+
+context:
+  - provider: jira
+    params:
+      domain: ${{ inputs.JIRA_DOMAIN }}
+      token: ${{ inputs.JIRA_TOKEN }}
