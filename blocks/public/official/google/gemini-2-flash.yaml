@@ -1,0 +1,12 @@
+name: Gemini 2.0 Flash
+version: 0.0.1
+
+models:
+  - name: Gemini 2.0 Flash
+    provider: gemini
+    model: gemini-2.0-flash-exp
+    apiKey: ${{ inputs.GEMINI_API_KEY  }}
+    roles:
+      - chat
+      - edit
+      - apply

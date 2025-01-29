@@ -1,0 +1,10 @@
+name: o1
+version: 0.0.1
+
+models:
+  - name: o1
+    provider: openai
+    model: o1
+    apiKey: ${{ inputs.OPENAI_API_KEY  }}
+    roles:
+      - chat

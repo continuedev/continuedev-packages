@@ -1,0 +1,12 @@
+name: Claude 3.5 Haiku
+version: 0.0.1
+
+models:
+  - name: Claude 3.5 Haiku
+    provider: anthropic
+    model: claude-3-5-haiku-latest
+    apiKey: ${{ inputs.ANTHROPIC_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply

@@ -19,3 +19,18 @@ jobs:
           api-key: ${{ secrets.CONTINUE_API_KEY }}
           owner-slug: continuedev
           paths: packages/**
+
+  publish-official:
+    if: false
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        owner: [openai, anthropic, google, mistral]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: continuedev/continue-publish-action@v1
+        with:
+          api-key: ${{ secrets.CONTINUE_API_KEY }}
+          owner-slug: ${{ matrix.owner }}
+          paths: blocks/public/official/${{ matrix.owner }}/**

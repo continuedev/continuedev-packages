@@ -1,0 +1,13 @@
+name: Codestral
+version: 0.0.1
+
+models:
+  - name: Codestral
+    provider: mistral
+    model: codestral
+    apiKey: ${{ inputs.MISTRAL_API_KEY }}
+    roles:
+      - autocomplete
+      - chat
+      - edit
+      - apply

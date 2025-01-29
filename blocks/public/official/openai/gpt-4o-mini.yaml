@@ -1,0 +1,12 @@
+name: GPT-4o Mini
+version: 0.0.1
+
+models:
+  - name: GPT-4o Mini
+    provider: openai
+    model: gpt-4o-mini
+    apiKey: ${{ inputs.OPENAI_API_KEY  }}
+    roles:
+      - chat
+      - edit
+      - apply
