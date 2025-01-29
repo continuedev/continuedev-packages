@@ -1,5 +1,0 @@
-name: Solidity Documentation
-version: 0.0.1
-docs:
-  - name: Solidity
-    startUrl: https://docs.soliditylang.org/en/v0.8.0/

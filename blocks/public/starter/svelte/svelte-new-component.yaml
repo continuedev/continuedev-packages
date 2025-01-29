@@ -1,5 +1,6 @@
 name: Svelte Component Creation
 version: 0.0.1
+
 prompts:
   - name: New Component
     description: Create a new Svelte component

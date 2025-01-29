@@ -20,6 +20,12 @@ jobs:
           owner-slug: continuedev
           paths: blocks/public/continuedev/**
 
+      - uses: continuedev/continue-publish-action@v1
+        with:
+          api-key: ${{ secrets.CONTINUE_API_KEY }}
+          owner-slug: starter
+          paths: blocks/public/starter/**
+
   publish-official:
     if: false
     runs-on: ubuntu-latest

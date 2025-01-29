@@ -1,5 +1,6 @@
 name: PyTorch New Module
 version: 0.0.1
+
 prompts:
   - name: New Module
     description: Create a new PyTorch module

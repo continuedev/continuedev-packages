@@ -1,5 +1,0 @@
-name: Next.js Security Documentation
-version: 0.0.1
-docs:
-  - name: Next.js Security
-    startUrl: https://nextjs.org/blog/security-nextjs-server-components-actions

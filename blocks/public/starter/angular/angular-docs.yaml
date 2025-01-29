@@ -1,5 +1,6 @@
-name: Angular Documentation
+name: Angular Docs
 version: 0.0.1
+
 docs:
   - name: Angular Docs
     startUrl: https://angular.io/docs

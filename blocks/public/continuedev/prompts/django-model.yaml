@@ -1,6 +1,0 @@
-name: Django Model Creation
-version: 0.0.1
-prompts:
-  - name: Create a basic Django model with common fields
-    description: Creates a new Django model with commonly used fields
-    prompt: Create a basic Django model with common fields

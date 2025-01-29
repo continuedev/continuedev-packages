@@ -1,5 +1,6 @@
-name: Angular New Component
+name: Create Angular Component
 version: 0.0.1
+
 prompts:
   - name: New Component
     description: Create a new Angular component

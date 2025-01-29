@@ -1,6 +1,0 @@
-name: Next.js Security API Inspection
-version: 0.0.1
-prompts:
-  - name: API route inspection
-    description: Analyzes API routes for security issues
-    prompt: Review this API route for security vulnerabilities. Ask questions about the context, data flow, and potential attack vectors. Be thorough in your investigation.

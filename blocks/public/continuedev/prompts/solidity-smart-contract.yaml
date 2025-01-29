@@ -1,6 +1,0 @@
-name: Solidity Smart Contract Creation
-version: 0.0.1
-prompts:
-  - name: Smart Contract
-    description: Creates a new Solidity smart contract based on the description provided.
-    prompt: Create a new Solidity smart contract with the following description.

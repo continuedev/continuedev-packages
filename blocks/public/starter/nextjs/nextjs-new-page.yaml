@@ -1,5 +1,6 @@
-name: Next.js Page Creation
+name: Create Next.js Page
 version: 0.0.1
+
 prompts:
   - name: Page
     description: Creates a new Next.js page based on the description provided.

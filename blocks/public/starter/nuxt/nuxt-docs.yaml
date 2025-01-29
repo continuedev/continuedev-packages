@@ -1,5 +1,6 @@
-name: Nuxt.js Documentation
+name: Nuxt.js Docs
 version: 0.0.1
+
 docs:
   - name: Nuxt.js
     startUrl: https://nuxt.com/docs
