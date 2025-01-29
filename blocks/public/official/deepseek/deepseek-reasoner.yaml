@@ -1,0 +1,10 @@
+name: Deepseek Reasoner
+version: 0.0.1
+
+models:
+  - name: Deepseek Reasoner
+    provider: deepseek
+    model: deepseek-reasoner
+    apiKey: ${{ inputs.DEEPSEEK_API_KEY }}
+    roles:
+      - chat

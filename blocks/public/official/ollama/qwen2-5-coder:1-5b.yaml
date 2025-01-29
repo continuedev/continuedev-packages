@@ -1,0 +1,9 @@
+name: Qwen 2.5 Coder 1.5B
+version: 0.0.1
+
+models:
+  - name: Qwen 2.5 Coder 1.5B
+    provider: ollama
+    model: qwen2.5-coder:1.5b
+    roles:
+      - autocomplete

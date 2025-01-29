@@ -1,0 +1,12 @@
+name: Deepseek Chat
+version: 0.0.1
+
+models:
+  - name: Deepseek Chat
+    provider: deepseek
+    model: deepseek-chat
+    apiKey: ${{ inputs.DEEPSEEK_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply

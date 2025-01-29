@@ -18,14 +18,14 @@ jobs:
         with:
           api-key: ${{ secrets.CONTINUE_API_KEY }}
           owner-slug: continuedev
-          paths: packages/**
+          paths: blocks/public/continuedev/**
 
   publish-official:
     if: false
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        owner: [openai, anthropic, google, mistral]
+        owner: [openai, anthropic, google, mistral, deepseek]
     steps:
       - uses: actions/checkout@v4
 
