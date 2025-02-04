@@ -1,6 +1,0 @@
-name: Continue VS Code extension base context
-version: 0.0.1
-
-packages:
-  - uses: continuedev/docs-vsc
-  - uses: continuedev/rules-vsc
