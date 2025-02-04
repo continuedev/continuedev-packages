@@ -1,0 +1,6 @@
+name: Data science & machine learning - Matplotlib Docs
+version: 0.0.1
+
+docs:
+  - name: Matplotlib
+    startUrl: https://matplotlib.org/stable/

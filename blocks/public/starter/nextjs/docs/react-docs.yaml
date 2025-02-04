@@ -1,0 +1,6 @@
+name: Next.js + Common Libraries
+version: 0.0.1
+
+docs:
+  - name: React
+    startUrl: https://react.dev/

@@ -1,0 +1,6 @@
+name: Angular
+version: 0.0.1
+
+docs:
+  - name: RxJS Docs
+    startUrl: https://rxjs.dev/guide/overview

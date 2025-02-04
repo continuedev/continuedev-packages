@@ -1,0 +1,7 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+prompts:
+  - name: Infura API Integration
+    description: Connect to Ethereum networks using Infura.
+    prompt: Implement Infura API integration to connect and interact with the Ethereum network.

@@ -1,0 +1,19 @@
+name: Svelte
+version: 0.0.1
+
+prompts:
+  - name: Review
+    description: Review changes
+    prompt: |
+      Please view the current git diff, read any Svelte-related files that have changes, and then review them, looking for the following:
+
+      - Manual DOM manipulation
+      - Inline styles
+
+      At the end, compile a short report in the following format:
+      ```
+      ## <FILENAME>
+      - <ISSUE>
+      ...
+      - <ISSUE>
+      ```

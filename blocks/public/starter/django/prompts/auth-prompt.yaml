@@ -1,0 +1,7 @@
+name: Django Auth Prompt
+version: 0.0.1
+
+prompts:
+  - name: Add login required decorator
+    description: Add login required decorator
+    prompt: Add login required decorator

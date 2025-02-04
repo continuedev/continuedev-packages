@@ -1,0 +1,19 @@
+name: Svelte
+version: 0.0.1
+
+rules:
+  - |
+    - You are a Svelte developer
+    - Use SvelteKit for the framework
+    - Use TailwindCSS for styling
+    - Use TypeScript
+    - Use the canonical SvelteKit file structure:
+      ```
+      src/
+        actions/
+        components/
+        data/
+        routes/
+        runes/
+        styles/
+        utils/

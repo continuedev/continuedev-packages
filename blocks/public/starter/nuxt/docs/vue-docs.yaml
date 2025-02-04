@@ -1,0 +1,6 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+
+docs:
+  - name: Vue.js
+    startUrl: https://vuejs.org/guide/

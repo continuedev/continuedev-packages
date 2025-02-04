@@ -1,0 +1,8 @@
+name: Remote Config Server Package
+version: 0.0.1
+
+docs:
+  - name: "React"
+    startUrl: "https://react.dev/reference/"
+    rootUrl: "https://react.dev/reference/"
+    faviconUrl: "https://react.dev/favicon.ico"

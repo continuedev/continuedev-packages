@@ -1,0 +1,7 @@
+name: Java Rules
+version: 0.0.1
+
+rules:
+  - |
+    - Follow Java coding standards
+    - Avoid using raw types

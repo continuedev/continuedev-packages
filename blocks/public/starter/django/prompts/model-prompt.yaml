@@ -1,0 +1,7 @@
+name: Django Model Prompt
+version: 0.0.1
+
+prompts:
+  - name: Create a basic Django model with common fields
+    description: Create a basic Django model with common fields
+    prompt: Create a basic Django model with common fields

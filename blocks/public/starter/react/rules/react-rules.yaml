@@ -1,0 +1,7 @@
+name: React
+version: 0.0.1
+
+rules:
+  - |
+    - Follow React patterns
+    - Avoid prop drilling

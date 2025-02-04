@@ -1,0 +1,6 @@
+name: Laravel/11x Docs
+version: 0.0.1
+
+docs:
+  - name: Laravel 11.x
+    startUrl: https://laravel.com/docs/11.x/readme

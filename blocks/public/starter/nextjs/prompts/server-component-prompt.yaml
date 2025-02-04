@@ -1,0 +1,7 @@
+name: Next.js + Common Libraries
+version: 0.0.1
+
+prompts:
+  - name: Server component
+    description: Create a server component.
+    prompt: Create a server component with the following functionality. If writing this as a server component is not possible, explain why.

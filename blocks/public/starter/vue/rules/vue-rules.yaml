@@ -1,0 +1,7 @@
+name: Vue
+version: 0.0.1
+
+rules:
+  - |
+    - Follow Vue style guide
+    - Avoid using this.$parent

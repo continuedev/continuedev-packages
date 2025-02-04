@@ -1,0 +1,7 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+
+prompts:
+  - name: API route
+    description: Create a Nuxt API route.
+    prompt: Create a Nuxt API route with the following functionality.

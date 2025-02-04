@@ -1,0 +1,6 @@
+name: Data science & machine learning - Conda Docs
+version: 0.0.1
+
+docs:
+  - name: Conda
+    startUrl: https://docs.conda.io/en/latest/

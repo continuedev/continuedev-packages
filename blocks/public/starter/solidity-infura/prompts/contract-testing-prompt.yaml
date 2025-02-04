@@ -1,0 +1,7 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+prompts:
+  - name: Contract Testing
+    description: Write tests for a smart contract.
+    prompt: Write unit tests for the following smart contract using Hardhat and Chai.

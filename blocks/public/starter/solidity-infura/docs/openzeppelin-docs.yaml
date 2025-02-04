@@ -1,0 +1,6 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+docs:
+  - name: OpenZeppelin
+    startUrl: https://docs.openzeppelin.com/contracts/4.x/

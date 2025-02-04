@@ -1,0 +1,6 @@
+name: Java Docs
+version: 0.0.1
+
+docs:
+  - name: Java docs
+    startUrl: https://docs.oracle.com/javase/8/docs/api/

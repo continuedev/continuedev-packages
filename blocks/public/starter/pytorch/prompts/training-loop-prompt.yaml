@@ -1,0 +1,15 @@
+name: PyTorch
+version: 0.0.1
+
+prompts:
+  - name: Training Loop
+    description: Create a training loop
+    prompt: |
+      Please create a training loop following these guidelines:
+      - Include validation step
+      - Add proper device handling (CPU/GPU)
+      - Implement gradient clipping
+      - Add learning rate scheduling
+      - Include early stopping
+      - Add progress bars using tqdm
+      - Implement checkpointing

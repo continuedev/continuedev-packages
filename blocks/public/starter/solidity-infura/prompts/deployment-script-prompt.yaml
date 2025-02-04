@@ -1,0 +1,7 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+prompts:
+  - name: Deployment Script
+    description: Create a deployment script for a smart contract.
+    prompt: Write a deployment script using Hardhat and Infura for the following smart contract.

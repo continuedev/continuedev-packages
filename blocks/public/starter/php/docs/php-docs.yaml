@@ -1,0 +1,7 @@
+name: PHP
+version: 0.0.1
+
+docs:
+  - name: PHP docs
+    startUrl: https://www.php.net/manual/en/
+    rootUrl: https://www.php.net/manual/en/

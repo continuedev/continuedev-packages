@@ -1,0 +1,7 @@
+name: Rust
+version: 0.0.1
+
+prompts:
+  - name: Write Cargo test
+    description: Write unit test with Cargo
+    prompt: Use Cargo to write a comprehensive suite of unit tests for this function

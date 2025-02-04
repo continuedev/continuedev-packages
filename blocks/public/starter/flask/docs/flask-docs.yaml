@@ -1,0 +1,6 @@
+name: Flask Docs
+version: 0.0.1
+
+docs:
+  - name: Flask docs
+    startUrl: https://flask.palletsprojects.com/en/2.0.x/

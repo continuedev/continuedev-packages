@@ -1,0 +1,7 @@
+name: Flask Test Prompt
+version: 0.0.1
+
+prompts:
+  - name: Write Flask tests
+    description: Write tests with Flask
+    prompt: Use Flask to write a comprehensive suite of tests for this application

@@ -1,0 +1,7 @@
+name: Rust
+version: 0.0.1
+
+rules:
+  - |
+    - Follow Rust idioms
+    - Avoid using unsafe blocks

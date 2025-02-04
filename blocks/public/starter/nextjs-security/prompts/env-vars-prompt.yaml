@@ -1,0 +1,7 @@
+name: Next.js Security Inspector Prompts
+version: 0.0.1
+
+prompts:
+  - name: Environment variables
+    description: Checks environment variable usage
+    prompt: Review how environment variables are used. Ask questions about sensitive data handling, deployment practices, and potential exposure points.

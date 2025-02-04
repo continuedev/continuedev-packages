@@ -1,0 +1,6 @@
+name: PyTorch
+version: 0.0.1
+
+docs:
+  - name: PyTorch Tutorials
+    startUrl: https://pytorch.org/tutorials/

@@ -1,0 +1,10 @@
+name: Laravel/11x Analyze Prompt
+version: 0.0.1
+
+prompts:
+  - name: Analyze Laravel Code
+    description: Analyze Laravel Code
+    prompt: |
+      Analyze the attached Laravel code and provide a detailed explanation of its structure, functionality, and any potential improvements or optimizations that could be made.
+      Provide a comprehensive overview of the code's purpose, including any specific requirements or constraints it addresses.
+      Identify any potential areas of improvement, such as code refactoring, performance enhancements, or architectural improvements.

@@ -1,0 +1,7 @@
+name: Vue
+version: 0.0.1
+
+prompts:
+  - name: Write Vue Test Utils
+    description: Write tests with Vue Test Utils
+    prompt: Use Vue Test Utils to write a comprehensive suite of tests for this component

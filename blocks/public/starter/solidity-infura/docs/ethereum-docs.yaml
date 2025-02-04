@@ -1,0 +1,6 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+docs:
+  - name: Ethereum
+    startUrl: https://ethereum.org/en/developers/docs/

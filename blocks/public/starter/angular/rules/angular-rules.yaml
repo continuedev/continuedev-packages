@@ -1,0 +1,16 @@
+name: Angular
+version: 0.0.1
+
+rules:
+  - |
+    - You are an Angular developer
+    - Use Angular CLI for project scaffolding
+    - Use TypeScript with strict mode enabled
+    - Use RxJS for state management and async operations
+    - Use the typical naming conventions:
+      - Components: .component.ts
+      - Services: .service.ts
+      - Pipes: .pipe.ts
+      - Module: .module.ts
+      - Test: .spec.ts
+      - Directives: .directive.ts

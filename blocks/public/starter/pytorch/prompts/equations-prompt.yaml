@@ -1,0 +1,8 @@
+name: PyTorch
+version: 0.0.1
+
+prompts:
+  - name: Equations
+    description: Convert module to equations
+    prompt: |
+      Please convert this PyTorch module to equations. Use KaTex, surrounding any equations in double dollar signs, like $$E_1 = E_2$$. Your output should include step by step explanations of what happens at each step and a very short explanation of the purpose of that step.

@@ -1,0 +1,6 @@
+name: Data science & machine learning - PyTorch Docs
+version: 0.0.1
+
+docs:
+  - name: PyTorch
+    startUrl: https://pytorch.org/docs/stable/index.html

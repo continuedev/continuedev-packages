@@ -1,0 +1,7 @@
+name: Next.js Security Inspector Prompts
+version: 0.0.1
+
+prompts:
+  - name: Data validation check
+    description: Checks input validation and sanitization
+    prompt: Analyze this code for data validation vulnerabilities. Ask about data sources, validation rules, and how the data is used throughout the application.

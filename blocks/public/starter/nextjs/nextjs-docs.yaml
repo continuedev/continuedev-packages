@@ -1,6 +1,0 @@
-name: Next.js Docs
-version: 0.0.1
-
-docs:
-  - name: Next.js
-    startUrl: https://nextjs.org/docs

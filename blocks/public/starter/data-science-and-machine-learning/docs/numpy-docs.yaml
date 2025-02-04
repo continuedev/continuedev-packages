@@ -1,0 +1,6 @@
+name: Data science & machine learning - NumPy Docs
+version: 0.0.1
+
+docs:
+  - name: NumPy
+    startUrl: https://numpy.org/doc/stable/

@@ -1,0 +1,7 @@
+name: Django Views Prompt
+version: 0.0.1
+
+prompts:
+  - name: Create basic CRUD class-based views
+    description: Create basic CRUD class-based views
+    prompt: Create basic CRUD class-based views

@@ -1,0 +1,6 @@
+name: Svelte
+version: 0.0.1
+
+docs:
+  - name: Svelte
+    startUrl: https://svelte.dev/docs/svelte

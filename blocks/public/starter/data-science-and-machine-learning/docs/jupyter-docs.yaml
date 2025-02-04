@@ -1,0 +1,6 @@
+name: Data science & machine learning - Jupyter Docs
+version: 0.0.1
+
+docs:
+  - name: Jupyter
+    startUrl: https://docs.jupyter.org/en/latest/

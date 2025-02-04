@@ -1,0 +1,6 @@
+name: Angular
+version: 0.0.1
+
+docs:
+  - name: Angular Material
+    startUrl: https://material.angular.io/

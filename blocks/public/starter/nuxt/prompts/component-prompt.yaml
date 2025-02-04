@@ -1,0 +1,7 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+
+prompts:
+  - name: Component
+    description: Create a component.
+    prompt: Create a component with the following functionality.

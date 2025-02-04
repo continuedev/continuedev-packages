@@ -1,0 +1,6 @@
+name: JavaScript Docs
+version: 0.0.1
+
+docs:
+  - name: JavaScript docs
+    startUrl: https://developer.mozilla.org/en-US/docs/Web/JavaScript

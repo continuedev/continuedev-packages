@@ -1,0 +1,7 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+prompts:
+  - name: Contract Functionality
+    description: Adds functionality to an existing smart contract.
+    prompt: Implement the following functionality in the smart contract.

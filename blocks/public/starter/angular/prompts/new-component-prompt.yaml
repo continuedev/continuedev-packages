@@ -1,0 +1,14 @@
+name: Angular
+version: 0.0.1
+
+prompts:
+  - name: New Component
+    description: Create a new Angular component
+    prompt: |
+      Please create a new Angular component following these guidelines:
+      - Include JSDoc comments for component and inputs/outputs
+      - Implement proper lifecycle hooks
+      - Include TypeScript interfaces for models
+      - Follow container/presentational component pattern where appropriate
+      - Include unit tests with Jasmine/Karma in a separate test file
+      - Make sure to create separate files for any services, pipes, modules, and directives

@@ -1,0 +1,7 @@
+name: Vue
+version: 0.0.1
+
+docs:
+  - name: Vue docs
+    startUrl: https://vuejs.org/v2/guide/
+    rootUrl: https://vuejs.org/v2/guide/ 

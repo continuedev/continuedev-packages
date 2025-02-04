@@ -1,0 +1,32 @@
+name: Data science & machine learning - Pipeline Prompt
+version: 0.0.1
+
+prompts:
+  - name: Data Pipeline Development
+    description: Create robust and scalable data processing pipelines
+    prompt: |
+      Generate a data processing pipeline with these requirements:
+
+      Input:
+      - Data loading from multiple sources (CSV, SQL, APIs)
+      - Input validation and schema checks
+      - Error logging for data quality issues
+
+      Processing:
+      - Standardized cleaning (missing values, outliers, types)
+      - Memory-efficient operations for large datasets
+      - Numerical transformations using NumPy
+      - Feature engineering and aggregations
+
+      Quality & Monitoring:
+      - Data quality checks at key stages
+      - Validation visualizations with Matplotlib
+      - Performance monitoring
+
+      Structure:
+      - Modular, documented code with error handling
+      - Configuration management
+      - Reproducible in Jupyter notebooks
+      - Example usage and tests
+
+      The user has provided the following information:

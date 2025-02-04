@@ -1,0 +1,7 @@
+name: Next.js Security Inspector Prompts
+version: 0.0.1
+
+prompts:
+  - name: Middleware inspection
+    description: Reviews middleware security
+    prompt: Examine this middleware for security concerns. Ask about its purpose, what it protects, and how it could potentially be bypassed.

@@ -1,0 +1,6 @@
+name: Next.js + Common Libraries
+version: 0.0.1
+
+docs:
+  - name: Tailwind CSS
+    startUrl: https://tailwindcss.com/docs

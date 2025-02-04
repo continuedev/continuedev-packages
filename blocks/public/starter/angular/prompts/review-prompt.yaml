@@ -1,0 +1,21 @@
+name: Angular
+version: 0.0.1
+
+prompts:
+  - name: Review
+    description: Review changes
+    prompt: |
+      Please review the current code changes looking for:
+
+      - Memory leaks (unsubscribed observables)
+      - Proper change detection strategy
+      - Proper use of async pipe
+      - Proper error handling
+
+      Format the review as:
+      ```
+      ## <FILENAME>
+      - <ISSUE>
+      ...
+      - <ISSUE>
+      ```

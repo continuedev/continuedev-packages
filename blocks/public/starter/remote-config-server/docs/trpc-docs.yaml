@@ -1,0 +1,6 @@
+name: Remote Config Server Package
+version: 0.0.1
+
+docs:
+  - name: "tRPC"
+    startUrl: "https://trpc.io/docs/"

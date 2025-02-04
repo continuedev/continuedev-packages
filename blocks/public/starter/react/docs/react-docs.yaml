@@ -1,0 +1,7 @@
+name: React
+version: 0.0.1
+
+docs:
+  - name: React docs
+    startUrl: https://reactjs.org/docs/getting-started.html
+    rootUrl: https://reactjs.org/docs/getting-started.html

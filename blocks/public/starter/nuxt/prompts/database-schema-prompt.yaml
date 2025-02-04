@@ -1,0 +1,7 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+
+prompts:
+  - name: Database schema
+    description: Create a database schema.
+    prompt: Create or update a database schema with the following models and relationships. Include necessary fields, relationships, and any relevant enums.

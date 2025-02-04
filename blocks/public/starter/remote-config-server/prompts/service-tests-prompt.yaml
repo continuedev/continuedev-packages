@@ -1,0 +1,14 @@
+name: Remote Config Server Package
+version: 0.0.1
+
+prompts:
+  - name: Service Tests
+    description: Write unit tests for a service class
+    prompt: |
+      Write a comprehensive set of unit tests for this service using Jest. You should avoid mocking things whenever possible. 
+
+      If you need to use S3, there is a localstack instance set up on port 4566 that you can use for testing S3.
+
+      For any datase-related stuff, you don't have to worry about set up because there's a test database already set up. You can see @services/control-plane/src/db/entity/TODO/services/PackageInviteService.test.ts as an example of how we do testing.
+
+      Whenever it's reasonable, try to do testing just through the service, rather than directly interacting with the database.

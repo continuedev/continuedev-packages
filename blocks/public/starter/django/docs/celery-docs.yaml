@@ -1,0 +1,6 @@
+name: Django Celery Docs
+version: 0.0.1
+
+docs:
+  - name: Celery
+    startUrl: https://docs.celeryq.dev/en/stable/

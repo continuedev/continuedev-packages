@@ -1,0 +1,7 @@
+name: Next.js + Common Libraries
+version: 0.0.1
+
+prompts:
+  - name: Prisma schema
+    description: Create a Prisma schema.
+    prompt: Create or update a Prisma schema with the following models and relationships. Include necessary fields, relationships, and any relevant enums.

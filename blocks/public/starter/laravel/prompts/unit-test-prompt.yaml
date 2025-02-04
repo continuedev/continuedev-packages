@@ -1,0 +1,15 @@
+name: Laravel/11x Unit Test Prompt
+version: 0.0.1
+
+prompts:
+  - name: Write Unit Test
+    description: Write Laravel Unit Tests for attached code
+    prompt: |
+      Use Laravel to write a comprehensive suite of unit tests for the attached code.
+      Ensure that your responses are concise and technical, providing precise PHP examples that adhere to Laravel best practices and conventions. Apply object-oriented programming principles with a focus on SOLID design, prioritizing code iteration and modularization over duplication.
+      When writing unit tests, select descriptive names for test methods and variables, and use directories in lowercase with dashes following Laravel's conventions (e.g., app/Http/Controllers). Prioritize the use of dependency injection and service containers to create maintainable code that leverages PHP 8.1+ features.
+      Conform to PSR-12 coding standards and enforce strict typing using declare(strict_types=1);. Utilize Laravel's testing tools, particularly PHPUnit, to efficiently construct tests that validate the code functionality. Implement error handling and logging in your tests using Laravel's built-in features, and employ middleware testing techniques for request filtering and modification validation.
+      Ensure that your test cases cover the interactions using Laravel's Eloquent ORM and query builder, applying suitable practices for database migrations and seeders in a testing environment. Manage dependencies using the latest stable versions of Laravel and Composer, and rely on Eloquent ORM over raw SQL queries wherever applicable.
+      Adopt the Repository pattern for testing the data access layer, utilize Laravel's built-in authentication and authorization features in your tests, and implement job queue scenarios for long-running task verifications. Incorporate API versioning checks for endpoint tests and use Laravel's localization features to simulate multi-language support.
+      Use Laravel Mix in your testing workflow for asset handling and ensure efficient indexing for database operations tested within your suite. Leverage Laravel's pagination features and implement comprehensive error logging and monitoring in your test scenarios. Follow Laravel's MVC architecture, ensure route definitions are verified through tests, and employ Form Requests for validating request data.
+      Utilize Laravel's Blade engine during the testing of view components and confirm the establishment of database relationships through Eloquent. Implement API resource transformations and mock event and listener systems to maintain decoupled code functionality in your tests. Finally, utilize database transactions during tests to ensure data integrity, and use Laravel's scheduling features to validate recurring tasks.

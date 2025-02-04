@@ -1,0 +1,6 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+
+docs:
+  - name: Nuxt UI
+    startUrl: https://ui.nuxt.com/

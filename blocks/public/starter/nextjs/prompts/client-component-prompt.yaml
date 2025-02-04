@@ -1,0 +1,7 @@
+name: Next.js + Common Libraries
+version: 0.0.1
+
+prompts:
+  - name: Client component
+    description: Create a client component.
+    prompt: Create a client component with the following functionality. If writing this as a server component is not possible, explain why.

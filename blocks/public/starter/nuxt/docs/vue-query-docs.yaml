@@ -1,0 +1,6 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+
+docs:
+  - name: Vue Query
+    startUrl: https://tanstack.com/query/v4/docs/vue/overview

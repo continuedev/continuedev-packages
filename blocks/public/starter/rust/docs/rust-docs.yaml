@@ -1,0 +1,7 @@
+name: Rust
+version: 0.0.1
+
+docs:
+  - name: Rust docs
+    startUrl: https://doc.rust-lang.org/book/
+    rootUrl: https://doc.rust-lang.org/book/

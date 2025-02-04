@@ -1,7 +1,0 @@
-name: Create Nuxt.js Page
-version: 0.0.1
-
-prompts:
-  - name: Page
-    description: Creates a new Nuxt.js page based on the description provided.
-    prompt: Create a new Nuxt.js page based on the following description.

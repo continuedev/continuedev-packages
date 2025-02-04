@@ -1,0 +1,7 @@
+name: Express Rules
+version: 0.0.1
+
+rules:
+  - |
+    - Follow Express best practices
+    - Avoid callback hell

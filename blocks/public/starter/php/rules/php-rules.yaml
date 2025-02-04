@@ -1,0 +1,7 @@
+name: PHP
+version: 0.0.1
+
+rules:
+  - |
+    - Follow PSR standards
+    - Avoid using global scope

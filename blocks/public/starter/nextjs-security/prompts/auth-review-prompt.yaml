@@ -1,0 +1,7 @@
+name: Next.js Security Inspector Prompts
+version: 0.0.1
+
+prompts:
+  - name: Authentication review
+    description: Reviews authentication implementation
+    prompt: Examine this authentication code for security issues. Ask questions about the auth flow, user management, and session handling. Consider common attack scenarios.

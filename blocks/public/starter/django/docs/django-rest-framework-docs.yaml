@@ -1,0 +1,6 @@
+name: Django REST Framework Docs
+version: 0.0.1
+
+docs:
+  - name: Django REST Framework
+    startUrl: https://www.django-rest-framework.org/

@@ -1,0 +1,6 @@
+name: Solidity + Ethereum + Infura
+version: 0.0.1
+
+docs:
+  - name: Hardhat
+    startUrl: https://hardhat.org/getting-started/

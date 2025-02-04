@@ -1,0 +1,7 @@
+name: JavaScript Test Prompt
+version: 0.0.1
+
+prompts:
+  - name: Write Jest
+    description: Write unit test with Jest
+    prompt: Use Jest to write a comprehensive suite of unit tests for this function
