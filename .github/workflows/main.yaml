@@ -14,17 +14,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # continuedev blocks
       - uses: continuedev/continue-publish-action@v1
         with:
           api-key: ${{ secrets.CONTINUE_API_KEY }}
           owner-slug: continuedev
           paths: blocks/public/continuedev/**
 
+      # Starter blocks
       - uses: continuedev/continue-publish-action@v1
         with:
           api-key: ${{ secrets.CONTINUE_API_KEY }}
           owner-slug: starter
           paths: blocks/public/starter/**
+
+      # continuedev assistants
+      - uses: continuedev/continue-publish-action@v1
+        with:
+          owner-slug: continuedev
+          paths: assistants/public/**
+          is-assistant: true
+          api-key: ${{ secrets.CONTINUE_API_KEY }}
 
   publish-official:
     if: false

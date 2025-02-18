@@ -1,0 +1,50 @@
+name: Default Assistant
+version: 0.0.1
+
+models:
+  - uses: anthropic/claude-3-5-sonnet
+    with:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - chat
+        - edit
+
+  - uses: anthropic/claude-3-5-haiku
+    with:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - apply
+        - summarize
+        - chat
+
+  - uses: mistral/codestral
+    with:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+    override:
+      roles:
+        - autocomplete
+
+  - uses: voyageai/rerank-2
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+    override:
+      roles:
+        - rerank
+
+  - uses: voyageai/voyage-code-3
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+    override:
+      roles:
+        - embed
+
+context:
+  - uses: continuedev/code-context
+  - uses: continuedev/docs-context
+  - uses: continuedev/diff-context
+  - uses: continuedev/terminal-context
+  - uses: continuedev/problems-context
+  - uses: continuedev/folder-context
+  - uses: continuedev/codebase-context
