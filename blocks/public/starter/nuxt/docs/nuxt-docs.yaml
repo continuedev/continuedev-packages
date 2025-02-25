@@ -1,0 +1,7 @@
+name: Nuxt.js + Common Libraries
+version: 0.0.1
+schema: v1
+
+docs:
+  - name: Nuxt.js
+    startUrl: https://nuxt.com/docs

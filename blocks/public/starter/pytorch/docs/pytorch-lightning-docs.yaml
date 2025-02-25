@@ -1,0 +1,7 @@
+name: PyTorch
+version: 0.0.1
+schema: v1
+
+docs:
+  - name: PyTorch Lightning
+    startUrl: https://lightning.ai/docs/pytorch/stable/
