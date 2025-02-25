@@ -1,5 +1,6 @@
 name: Django Model Prompt
 version: 0.0.1
+schema: v1
 
 prompts:
   - name: Create a basic Django model with common fields

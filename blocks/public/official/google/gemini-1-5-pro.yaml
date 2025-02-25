@@ -1,5 +1,6 @@
 name: Gemini 1.5 Pro
 version: 0.0.1
+schema: v1
 
 models:
   - name: Gemini 1.5 Pro

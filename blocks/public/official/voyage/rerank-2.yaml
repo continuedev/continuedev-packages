@@ -1,5 +1,6 @@
 name: rerank-2
 version: 0.0.1
+schema: v1
 
 models:
   - name: rerank-2

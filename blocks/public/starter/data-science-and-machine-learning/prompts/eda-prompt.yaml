@@ -1,5 +1,6 @@
 name: Data science & machine learning - EDA Prompt
 version: 0.0.1
+schema: v1
 
 prompts:
   - name: Exploratory Data Analysis

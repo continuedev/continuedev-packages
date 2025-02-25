@@ -1,5 +1,6 @@
 name: Remote Config Server Package
 version: 0.0.1
+schema: v1
 
 docs:
   - name: "Next.js"

@@ -1,5 +1,6 @@
 name: voyage-code-3
 version: 0.0.1
+schema: v1
 
 models:
   - name: voyage-code-3
