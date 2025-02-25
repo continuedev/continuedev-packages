@@ -1,8 +1,8 @@
-name: Vue
-version: 0.0.1
+name: Vue Docs
+version: 0.0.2
 schema: v1
 
 docs:
   - name: Vue docs
     startUrl: https://vuejs.org/v2/guide/
-    rootUrl: https://vuejs.org/v2/guide/ 
+    rootUrl: https://vuejs.org/v2/guide/

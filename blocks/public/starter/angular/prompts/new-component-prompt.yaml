@@ -1,5 +1,5 @@
-name: Angular New Component
-version: 0.0.2
+name: New Angular Component
+version: 0.0.3
 schema: v1
 
 prompts:

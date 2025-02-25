@@ -1,5 +1,5 @@
-name: Next.js + Common Libraries
-version: 0.0.1
+name: Next.js Rules
+version: 0.0.2
 schema: v1
 
 rules:

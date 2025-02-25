@@ -1,5 +1,5 @@
-name: Next.js Security Inspector Prompts
-version: 0.0.1
+name: Next.js API Route Inspection Prompt
+version: 0.0.2
 schema: v1
 
 prompts:
