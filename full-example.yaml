@@ -1,6 +1,7 @@
 # This whole file is the config.yaml that defines an "assistant"
 name: Full example of assistant in block paradigm
 version: 0.0.1
+schema: v1
 
 # This is a "section" (the "models" section)
 models:

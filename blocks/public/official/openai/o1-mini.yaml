@@ -1,5 +1,6 @@
 name: o1 Mini
 version: 0.0.1
+schema: v1
 
 models:
   - name: o1 Mini

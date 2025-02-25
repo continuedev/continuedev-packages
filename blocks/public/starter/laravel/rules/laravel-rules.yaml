@@ -1,5 +1,6 @@
 name: Laravel/11x Rules
 version: 0.0.1
+schema: v1
 
 rules:
   - |

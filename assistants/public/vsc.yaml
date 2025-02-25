@@ -1,5 +1,6 @@
 name: Continue VS Code extension assistant
 version: 0.0.1
+schema: v1
 
 packages:
   - uses: continuedev/base-models

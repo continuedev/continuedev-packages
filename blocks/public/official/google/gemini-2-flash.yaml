@@ -1,5 +1,6 @@
 name: Gemini 2.0 Flash
 version: 0.0.1
+schema: v1
 
 models:
   - name: Gemini 2.0 Flash

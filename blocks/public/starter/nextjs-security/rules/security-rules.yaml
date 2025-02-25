@@ -1,5 +1,6 @@
 name: Next.js Security Inspector Rules
 version: 0.0.1
+schema: v1
 
 rules:
   - |

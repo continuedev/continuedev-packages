@@ -1,5 +1,6 @@
 name: Data science & machine learning - Pipeline Prompt
 version: 0.0.1
+schema: v1
 
 prompts:
   - name: Data Pipeline Development

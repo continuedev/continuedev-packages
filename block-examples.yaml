@@ -1,6 +1,7 @@
 ### openai/gpt-4o ###
 name: GPT-4o
 version: 0.0.1
+schema: v1
 
 models:
   - name: GPT-4o
@@ -20,6 +21,7 @@ models:
 ### voyageai/voyage-code-3 ###
 name: Voyage Code 3
 version: 0.0.1
+schema: v1
 
 models:
   - name: Voyage Code 3
@@ -33,6 +35,7 @@ models:
 ### python/pep8-rules ###
 name: PEP8 Rules
 version: 0.0.1
+schema: v1
 
 rules:
   - |
@@ -47,6 +50,7 @@ rules:
 ### sentry/recent-issues ###
 name: Sentry Recent Issues
 version: 0.0.1
+schema: v1
 
 context:
   - provider: http

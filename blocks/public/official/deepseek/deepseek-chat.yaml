@@ -1,5 +1,6 @@
 name: Deepseek Chat
 version: 0.0.1
+schema: v1
 
 models:
   - name: Deepseek Chat

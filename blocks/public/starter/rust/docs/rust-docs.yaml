@@ -1,5 +1,6 @@
 name: Rust
 version: 0.0.1
+schema: v1
 
 docs:
   - name: Rust docs

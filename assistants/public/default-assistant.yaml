@@ -1,5 +1,6 @@
 name: Default Assistant
 version: 0.0.1
+schema: v1
 
 models:
   - uses: anthropic/claude-3-5-sonnet

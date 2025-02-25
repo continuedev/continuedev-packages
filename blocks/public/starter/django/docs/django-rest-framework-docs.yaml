@@ -1,5 +1,6 @@
 name: Django REST Framework Docs
 version: 0.0.1
+schema: v1
 
 docs:
   - name: Django REST Framework
