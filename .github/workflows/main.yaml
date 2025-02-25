@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - packages/**
+      - blocks/public/continuedev/**
       - .github/workflows/main.yaml
 
 jobs:
@@ -22,31 +22,16 @@ jobs:
           paths: blocks/public/continuedev/**
 
       # Starter blocks
-      - uses: continuedev/continue-publish-action@v1
-        with:
-          api-key: ${{ secrets.CONTINUE_API_KEY }}
-          owner-slug: starter
-          paths: blocks/public/starter/**
+      # - uses: continuedev/continue-publish-action@v1
+      #   with:
+      #     api-key: ${{ secrets.CONTINUE_API_KEY }}
+      #     owner-slug: starter
+      #     paths: blocks/public/starter/**
 
       # continuedev assistants
-      - uses: continuedev/continue-publish-action@v1
-        with:
-          owner-slug: continuedev
-          paths: assistants/public/**
-          is-assistant: true
-          api-key: ${{ secrets.CONTINUE_API_KEY }}
-
-  publish-official:
-    if: false
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        owner: [openai, anthropic, google, mistral, deepseek]
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: continuedev/continue-publish-action@v1
-        with:
-          api-key: ${{ secrets.CONTINUE_API_KEY }}
-          owner-slug: ${{ matrix.owner }}
-          paths: blocks/public/official/${{ matrix.owner }}/**
+      # - uses: continuedev/continue-publish-action@v1
+      #   with:
+      #     owner-slug: continuedev
+      #     paths: assistants/public/**
+      #     is-assistant: true
+      #     api-key: ${{ secrets.CONTINUE_API_KEY }}
