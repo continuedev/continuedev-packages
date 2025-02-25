@@ -1,7 +1,0 @@
-name: PyTorch
-version: 0.0.1
-schema: v1
-
-docs:
-  - name: PyTorch Tutorials
-    startUrl: https://pytorch.org/tutorials/

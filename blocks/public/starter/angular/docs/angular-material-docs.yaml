@@ -1,7 +1,0 @@
-name: Angular
-version: 0.0.1
-schema: v1
-
-docs:
-  - name: Angular Material
-    startUrl: https://material.angular.io/
