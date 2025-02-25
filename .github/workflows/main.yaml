@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - blocks/public/continuedev/**
+      - blocks/public/**
       - .github/workflows/main.yaml
 
 jobs:
@@ -22,11 +22,11 @@ jobs:
           paths: blocks/public/continuedev/**
 
       # Starter blocks
-      # - uses: continuedev/continue-publish-action@v1
-      #   with:
-      #     api-key: ${{ secrets.CONTINUE_API_KEY }}
-      #     owner-slug: starter
-      #     paths: blocks/public/starter/**
+      - uses: continuedev/continue-publish-action@v1
+        with:
+          api-key: ${{ secrets.CONTINUE_API_KEY }}
+          owner-slug: starter
+          paths: blocks/public/starter/**
 
       # continuedev assistants
       # - uses: continuedev/continue-publish-action@v1
