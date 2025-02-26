@@ -35,7 +35,7 @@ jobs:
           api-key: ${{ secrets.CONTINUE_API_KEY }}
           owner-slug: starter
           is-assistant: true
-          paths: assistants/public/starter/**
+          paths: assistants/public/**
 
       # continuedev assistants
       # - uses: continuedev/continue-publish-action@v1
