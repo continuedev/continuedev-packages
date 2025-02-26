@@ -1,7 +1,0 @@
-name: hub.continue.dev assistant
-version: 0.0.1
-schema: v1
-
-packages:
-  - uses: continuedev/base-models
-  - uses: continuedev/base-context-hub

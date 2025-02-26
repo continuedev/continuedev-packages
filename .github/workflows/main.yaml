@@ -28,6 +28,14 @@ jobs:
           owner-slug: starter
           paths: blocks/public/starter/**
 
+      # Starter assistants
+      - uses: continuedev/continue-publish-action@v1
+        with:
+          api-key: ${{ secrets.CONTINUE_API_KEY }}
+          owner-slug: starter
+          is-assistant: true
+          paths: assistants/public/starter/**
+
       # continuedev assistants
       # - uses: continuedev/continue-publish-action@v1
       #   with:

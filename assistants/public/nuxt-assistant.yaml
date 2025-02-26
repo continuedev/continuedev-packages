@@ -1,0 +1,46 @@
+name: Nuxt Assistant
+version: 1.0.0
+schema: v1
+
+rules:
+  - uses: starter/nuxt-rules
+
+docs:
+  - uses: starter/nuxt-docs
+
+prompts:
+  - uses: starter/nuxt-page-prompt
+
+models:
+  - uses: anthropic/claude-3-7-sonnet
+    with:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - chat
+        - edit
+        - apply
+
+  - uses: mistral/codestral
+    with:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+    override:
+      roles:
+        - autocomplete
+
+  - uses: voyageai/voyage-code-3
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
+  - uses: voyageai/rerank-2
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
+context:
+  - uses: continuedev/diff-context
+  - uses: continuedev/codebase-context
+  - uses: continuedev/url-context
+  - uses: continuedev/folder-context
+  - uses: continuedev/terminal-context
+  - uses: continuedev/code-context
+  - uses: continuedev/file-context
