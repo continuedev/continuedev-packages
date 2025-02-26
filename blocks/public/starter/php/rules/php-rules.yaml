@@ -1,5 +1,5 @@
-name: PHP
-version: 0.0.1
+name: PHP Rules
+version: 0.0.2
 schema: v1
 
 rules:

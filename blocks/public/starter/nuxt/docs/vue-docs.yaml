@@ -1,5 +1,5 @@
-name: Nuxt.js + Common Libraries
-version: 0.0.1
+name: Vue Guide
+version: 0.0.2
 schema: v1
 
 docs:

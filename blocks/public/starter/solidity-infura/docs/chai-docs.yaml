@@ -1,5 +1,5 @@
-name: Solidity + Ethereum + Infura
-version: 0.0.1
+name: Chai Docs
+version: 0.0.2
 schema: v1
 
 docs:
