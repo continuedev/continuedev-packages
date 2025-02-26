@@ -1,4 +1,4 @@
-name: PyTorch
+name: Build Training Loop
 version: 0.0.1
 schema: v1
 

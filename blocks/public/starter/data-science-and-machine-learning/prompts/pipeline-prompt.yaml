@@ -1,5 +1,5 @@
-name: Data science & machine learning - Pipeline Prompt
-version: 0.0.1
+name: Create Data Pipeline
+version: 0.0.2
 schema: v1
 
 prompts:
