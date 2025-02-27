@@ -1,0 +1,82 @@
+name: hub.continue.dev extension assistant
+version: 0.0.1
+schema: v1
+
+models:
+  - uses: anthropic/claude-3-7-sonnet
+    with:
+      apiKey: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - chat
+        - edit
+        - apply
+
+  - uses: mistral/codestral
+    with:
+      apiKey: ${{ secrets.MISTRAL_API_KEY }}
+    override:
+      roles:
+        - autocomplete
+
+  - uses: voyageai/voyage-code-3
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
+  - uses: voyageai/rerank-2
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
+  - uses: google/gemini-2.0-flash
+    with:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+  - uses: openai/o3-mini
+    with:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+  - uses: openai/o1
+    with:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+rules:
+  - uses: starter/nextjs-rules
+
+docs:
+  - uses: continuedev/continue-docs
+  - uses: starter/trpc-docs
+  - uses: starter/typeorm-docs
+  - uses: starter/postgres-docs
+  - uses: starter/workos-docs
+  - uses: starter/zod-docs
+  - uses: starter/react-query-docs
+  - uses: starter/tailwind-docs
+  - uses: starter/nextjs-docs
+
+prompts:
+  - uses: starter/client-component-prompt
+  - uses: starter/nextjs-security-api-route-prompt
+  - uses: starter/nextjs-new-page
+
+context:
+  - uses: continuedev/diff-context
+  - uses: continuedev/codebase-context
+  - uses: continuedev/url-context
+  - uses: continuedev/folder-context
+  - uses: continuedev/terminal-context
+  - uses: continuedev/code-context
+  - uses: continuedev/file-context
+  - uses: continuedev/current-file-context
+  - uses: continuedev/docs-context
+  - uses: continuedev/repo-map-context
+  - uses: continuedev/open-files-context
+  - uses: continuedev/problems-context
+  - uses: continuedev/clipboard-context
+  - uses: continuedev/commits-context
+  - uses: continuedev/os-context
+
+mcpServers:
+  - uses: anthropic/memory-mcp
+  - uses: opentools/playwright-mcp-server
+  - uses: anthropic/filesystem-mcp
+  - uses: anthropic/postgres-mcp

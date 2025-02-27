@@ -3,5 +3,5 @@ version: 0.0.2
 schema: v1
 
 docs:
-  - name: "TypeORM"
-    startUrl: "https://typeorm.io/"
+  - name: TypeORM docs
+    startUrl: https://typeorm.io/

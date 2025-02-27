@@ -3,5 +3,5 @@ version: 0.0.2
 schema: v1
 
 docs:
-  - name: "tRPC"
-    startUrl: "https://trpc.io/docs/"
+  - name: tRPC docs
+    startUrl: https://trpc.io/docs/

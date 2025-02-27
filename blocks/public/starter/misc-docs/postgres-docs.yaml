@@ -1,0 +1,6 @@
+name: Postgres Docs
+version: 0.0.1
+schema: v1
+docs:
+  - name: Postgres docs
+    startUrl: https://www.postgresql.org/docs/17/index.html
