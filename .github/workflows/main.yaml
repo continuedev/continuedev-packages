@@ -18,14 +18,14 @@ jobs:
       # continuedev blocks
       - uses: continuedev/continue-publish-action@v1
         with:
-          api-key: ${{ secrets.CONTINUE_API_KEY }}
+          api-key: ${{ secrets.CONTINUEDEV_ORG_CONTINUE_API_KEY }}
           owner-slug: continuedev
           paths: blocks/public/continuedev/**
 
       # continuedev assistants
       - uses: continuedev/continue-publish-action@v1
         with:
-          api-key: ${{ secrets.CONTINUE_API_KEY }}
+          api-key: ${{ secrets.CONTINUEDEV_ORG_CONTINUE_API_KEY }}
           owner-slug: continuedev
           is-assistant: true
           paths: assistants/public/continuedev/**
