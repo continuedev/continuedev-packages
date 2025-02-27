@@ -1,0 +1,6 @@
+name: React Query Docs
+version: 0.0.1
+schema: v1
+docs:
+  - name: React Query docs
+    startUrl: https://tanstack.com/query/v5/docs/framework/react/overview

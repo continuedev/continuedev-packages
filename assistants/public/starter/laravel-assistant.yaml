@@ -9,7 +9,6 @@ docs:
   - uses: starter/laravel-docs
 
 prompts:
-  - uses: starter/laravel-prompt
   - uses: starter/unit-test-prompt
 
 models:

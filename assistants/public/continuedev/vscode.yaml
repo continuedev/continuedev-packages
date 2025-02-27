@@ -1,0 +1,31 @@
+name: Continue VS Code extension assistant
+version: 0.0.1
+schema: v1
+
+models:
+  - uses: anthropic/claude-3-5-sonnet
+    with:
+      apiKey: ${{ secrets.ANTHROPIC_API_KEY }}
+    override:
+      roles:
+        - chat
+        - edit
+        - apply
+
+  - uses: mistral/codestral
+    with:
+      apiKey: ${{ secrets.MISTRAL_API_KEY }}
+    override:
+      roles:
+        - autocomplete
+
+  - uses: voyageai/voyage-code-3
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
+  - uses: voyageai/rerank-2
+    with:
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+
+docs:
+  - uses: continuedev/continue-docs
