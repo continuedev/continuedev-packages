@@ -31,6 +31,10 @@ models:
     with:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+  - uses: google/gemini-2.0-flash-thinking
+    with:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
   - uses: openai/o3-mini
     with:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
