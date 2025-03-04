@@ -1,0 +1,6 @@
+name: Slack API Docs
+version: 0.0.1
+schema: v1
+docs:
+  - name: Slack API docs
+    startUrl: https://api.slack.com/

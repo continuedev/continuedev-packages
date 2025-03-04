@@ -5,7 +5,7 @@ schema: v1
 models:
   - uses: anthropic/claude-3-5-sonnet
     with:
-      apiKey: ${{ secrets.ANTHROPIC_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     override:
       roles:
         - chat
@@ -14,7 +14,7 @@ models:
 
   - uses: mistral/codestral
     with:
-      apiKey: ${{ secrets.MISTRAL_API_KEY }}
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
     override:
       roles:
         - autocomplete
