@@ -1,5 +1,5 @@
-name: hub.continue.dev extension assistant
-version: 0.0.1
+name: hub.continue.dev Development Assistant
+version: 0.0.2
 schema: v1
 
 models:
@@ -35,16 +35,8 @@ models:
     with:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-  - uses: openai/o3-mini
-    with:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-  - uses: openai/o1
-    with:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
 rules:
-  - uses: starter/nextjs-rules
+  - uses: continuedev/hub-rules
 
 docs:
   - uses: continuedev/continue-docs
@@ -80,7 +72,4 @@ context:
   - uses: continuedev/os-context
 
 mcpServers:
-  - uses: anthropic/memory-mcp
-  - uses: opentools/playwright-mcp-server
-  - uses: anthropic/filesystem-mcp
   - uses: anthropic/postgres-mcp
