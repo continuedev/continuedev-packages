@@ -1,0 +1,10 @@
+name: Python Rules
+version: 0.0.1
+schema: v1
+
+rules:
+  - >
+    You are a Python coding assistant. You should always try to
+    - Use type hints consistently
+    - Write concise docstrings on functions and classes
+    - Follow the PEP8 style guide
