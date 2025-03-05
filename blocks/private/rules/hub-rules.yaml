@@ -6,121 +6,123 @@ rules:
   - >
     You are an expert TypeScript developer working on "hub.continue.dev". This is a central, public repository of building blocks that help users build custom AI code assistants, which can be used with the Continue VS Code and JetBrains IDE plugins.
 
-    The layout of the repository is as follows:
+    <repository_layout>
+      ```
+      ├── DEPLOYMENT.md
+      ├── README.md
+      ├── app
+      │   ├── README.md
+      │   ├── app/ (Next.js app, using the App Router)
+      │   ├── components/ (React components used in the app)
+      │   ├── hooks/ (React hooks used in the app)
+      │   ├── lib/ (utility functions and types)
+      │   ├── middleware.ts
+      │   ├── next-env.d.ts
+      │   ├── next.config.js
+      │   ├── package.json
+      │   ├── postcss.config.js
+      │   ├── public/ (static assets for the app, including icons)
+      │   ├── tailwind.config.js
+      │   ├── tests/ (e2e tests for the app written with Playwright)
+      │   ├── tsconfig.json
+      │   ├── utils/ (more utility functions and types)
+      │   └── vercel.json
+      ├── dev (development environment setup scripts, including Docker Compose file for Postgres and LocalStack)
+      ├── fivexl-terraform (Terraform source code for our AWS infrastructure)
+      ├── package-lock.json
+      ├── package.json (root package.json for the monorepo, which uses NPM Workspaces)
+      ├── packages (various NPM packages used in the monorepo)
+      │   ├── dto (data transfer objects types, used less frequently)
+      │   ├── shared (constants and utility functions shared between frontend and backend)
+      ├── services
+      │   ├── continue-proxy (the on-premise proxy for Continue that customers can deploy in their own environment)
+      │   ├── control-plane (!this is the code for the backend for hub.continue.dev)
+      │   │   ├── Dockerfile
+      │   │   ├── README.md
+      │   │   ├── jest.config.js
+      │   │   ├── jest.setup.ts
+      │   │   ├── package.json
+      │   │   ├── src
+      │   │   │   ├── db
+      │   │   │   │   ├── dataSource.ts (TypeORM data source)
+      │   │   │   │   ├── entity (all TypeORM entities live here)
+      │   │   │   │   │   │   └── services (some newer services live here)
+      │   │   │   │   ├── migration-tests (tests for migrations)
+      │   │   │   │   ├── migrations (TypeORM generated migrations)
+      │   │   │   │   ├── repositories.ts
+      │   │   │   │   ├── subscribers
+      │   │   │   │   ├── testDataSource.test.ts
+      │   │   │   │   └── testDataSource.ts
+      │   │   │   ├── env.ts (all environment variables are exported in an object here)
+      │   │   │   ├── routes (all non-tRPC routes live here, which exist mostly when we need publicly available HTTP APIs)
+      │   │   │   │   ├── ide (the IDE extensions call these routes for authentication and loading assistants)
+      │   │   │   │   ├── model-proxy (this is the router for Continue's managed proxy)
+      │   │   │   │   │   ├── openai
+      │   │   │   │   ├── on-prem-proxy (used for authentication of the on-premise proxy)
+      │   │   │   │   ├── webhooks (webhook implementations)
+      │   │   │   │   └── workspace    │   │   │   ├── server.ts
+      │   │   │   ├── trpc (tRPC implementations for the app)
+      │   │   │   │   ├── appRouter.ts
+      │   │   │   │   ├── context.ts
+      │   │   │   │   ├── index.ts
+      │   │   │   │   ├── procedures (procedures handle various authentication and authorization checks for tRPC)
+      │   │   │   │   │   ├── adminProcedure.ts
+      │   │   │   │   │   ├── authedProcedure.ts
+      │   │   │   │   │   ├── bundleProcedure.ts
+      │   │   │   │   │   ├── credentialProcedure.ts
+      │   │   │   │   │   ├── organizationProcedure.ts
+      │   │   │   │   │   └── packageProcedure.ts
+      │   │   │   │   └── routers (all tRPC routers live here)
+      │   │   │   │       ├── admin
+      │   │   │   │       ├── api-keys
+      │   │   │   │       ├── billing
+      │   │   │   │       ├── bundle
+      │   │   │   │       ├── directorySyncRouter.ts
+      │   │   │   │       ├── onboarding
+      │   │   │   │       ├── orgs
+      │   │   │   │       ├── package
+      │   │   │   │       │   ├── groupPackageAssignments
+      │   │   │   │       │   ├── invites
+      │   │   │   │       │   ├── secrets
+      │   │   │   │       │   ├── stars
+      │   │   │   │       │   └── versions
+      │   │   │   │       ├── user
+      │   │   │   │       │   ├── credentials
+      │   │   │   │       ├── workspace
+      │   │   │   │       │   ├── groupWorkspaceAssignments
+      │   │   │   │       │   ├── onPremProxy
+      │   │   │   │       │   └── proxyModels
+      │   │   │   └── util (backend utilities, including WorkOS utilities)
+      │   │   ├── tsconfig.eslint.json
+      │   │   └── tsconfig.json
+      └── tsconfig.json
+      ```
+    </repository_layout>
 
-    ```
-    ├── DEPLOYMENT.md
-    ├── README.md
-    ├── app
-    │   ├── README.md
-    │   ├── app/ (Next.js app, using the App Router)
-    │   ├── components/ (React components used in the app)
-    │   ├── hooks/ (React hooks used in the app)
-    │   ├── lib/ (utility functions and types)
-    │   ├── middleware.ts
-    │   ├── next-env.d.ts
-    │   ├── next.config.js
-    │   ├── package.json
-    │   ├── postcss.config.js
-    │   ├── public/ (static assets for the app, including icons)
-    │   ├── tailwind.config.js
-    │   ├── tests/ (e2e tests for the app written with Playwright)
-    │   ├── tsconfig.json
-    │   ├── utils/ (more utility functions and types)
-    │   └── vercel.json
-    ├── dev (development environment setup scripts, including Docker Compose file for Postgres and LocalStack)
-    ├── fivexl-terraform (Terraform source code for our AWS infrastructure)
-    ├── package-lock.json
-    ├── package.json (root package.json for the monorepo, which uses NPM Workspaces)
-    ├── packages (various NPM packages used in the monorepo)
-    │   ├── dto (data transfer objects types, used less frequently)
-    │   ├── shared (constants and utility functions shared between frontend and backend)
-    ├── services
-    │   ├── continue-proxy (the on-premise proxy for Continue that customers can deploy in their own environment)
-    │   ├── control-plane (!this is the code for the backend for hub.continue.dev)
-    │   │   ├── Dockerfile
-    │   │   ├── README.md
-    │   │   ├── jest.config.js
-    │   │   ├── jest.setup.ts
-    │   │   ├── package.json
-    │   │   ├── src
-    │   │   │   ├── db
-    │   │   │   │   ├── dataSource.ts (TypeORM data source)
-    │   │   │   │   ├── entity (all TypeORM entities live here)
-    │   │   │   │   │   │   └── services (some newer services live here)
-    │   │   │   │   ├── migration-tests (tests for migrations)
-    │   │   │   │   ├── migrations (TypeORM generated migrations)
-    │   │   │   │   ├── repositories.ts
-    │   │   │   │   ├── subscribers
-    │   │   │   │   ├── testDataSource.test.ts
-    │   │   │   │   └── testDataSource.ts
-    │   │   │   ├── env.ts (all environment variables are exported in an object here)
-    │   │   │   ├── routes (all non-tRPC routes live here, which exist mostly when we need publicly available HTTP APIs)
-    │   │   │   │   ├── ide (the IDE extensions call these routes for authentication and loading assistants)
-    │   │   │   │   ├── model-proxy (this is the router for Continue's managed proxy)
-    │   │   │   │   │   ├── openai
-    │   │   │   │   ├── on-prem-proxy (used for authentication of the on-premise proxy)
-    │   │   │   │   ├── webhooks (webhook implementations)
-    │   │   │   │   └── workspace    │   │   │   ├── server.ts
-    │   │   │   ├── trpc (tRPC implementations for the app)
-    │   │   │   │   ├── appRouter.ts
-    │   │   │   │   ├── context.ts
-    │   │   │   │   ├── index.ts
-    │   │   │   │   ├── procedures (procedures handle various authentication and authorization checks for tRPC)
-    │   │   │   │   │   ├── adminProcedure.ts
-    │   │   │   │   │   ├── authedProcedure.ts
-    │   │   │   │   │   ├── bundleProcedure.ts
-    │   │   │   │   │   ├── credentialProcedure.ts
-    │   │   │   │   │   ├── organizationProcedure.ts
-    │   │   │   │   │   └── packageProcedure.ts
-    │   │   │   │   └── routers (all tRPC routers live here)
-    │   │   │   │       ├── admin
-    │   │   │   │       ├── api-keys
-    │   │   │   │       ├── billing
-    │   │   │   │       ├── bundle
-    │   │   │   │       ├── directorySyncRouter.ts
-    │   │   │   │       ├── onboarding
-    │   │   │   │       ├── orgs
-    │   │   │   │       ├── package
-    │   │   │   │       │   ├── groupPackageAssignments
-    │   │   │   │       │   ├── invites
-    │   │   │   │       │   ├── secrets
-    │   │   │   │       │   ├── stars
-    │   │   │   │       │   └── versions
-    │   │   │   │       ├── user
-    │   │   │   │       │   ├── credentials
-    │   │   │   │       ├── workspace
-    │   │   │   │       │   ├── groupWorkspaceAssignments
-    │   │   │   │       │   ├── onPremProxy
-    │   │   │   │       │   └── proxyModels
-    │   │   │   └── util (backend utilities, including WorkOS utilities)
-    │   │   ├── tsconfig.eslint.json
-    │   │   └── tsconfig.json
-    └── tsconfig.json
-    ```
-
-    ## Rules to follow
-    - When writing React components, you should avoid useEffect as often as possible. Instead, it is usually possible to achieve the same thing by using a combination of useState and better code organization
-    - Always write a 1-2 line docstring at the top of React components that clearly and succinctly describe their purpose
-    - For any React component with >2 props, you should define an interface called `<ComponentName>Props`. It should have a very short docstring on each of the options.
-    - Always use Tailwind for styles
-    - I am developing with VS Code on a MacBook Pro
+    <rules_to_follow>
+      - When writing React components, you should avoid useEffect as often as possible. Instead, it is usually possible to achieve the same thing by using a combination of useState and better code organization
+      - Always write a 1-2 line docstring at the top of React components that clearly and succinctly describe their purpose
+      - For any React component with >2 props, you should define an interface called `<ComponentName>Props`. It should have a very short docstring on each of the options.
+      - Always use Tailwind for styles
+      - I am developing with VS Code on a MacBook Pro
+    </rules_to_follow>
       
-    ## Code Structure and Libraries
-    The frontend is a vanilla Next.js app using the App Router. We use the following libraries:
-    - Tailwind for styling
-    - React Query with tRPC for data fetching
-      - in server components, we use `import { trpcServer } from "@/lib/trpcClient";`
-      - in client components, we use `import { trpc } from "@/lib/trpcReact";`
-    - shadcn/ui for UI components
-    - react-hook-form for form handling (through shadcn/ui's Form component)
+    <tech_stack>
+      The frontend is a vanilla Next.js app using the App Router. We use the following libraries:
+      - Tailwind for styling
+      - React Query with tRPC for data fetching
+        - in server components, we use `import { trpcServer } from "@/lib/trpcClient";`
+        - in client components, we use `import { trpc } from "@/lib/trpcReact";`
+      - shadcn/ui for UI components
+      - react-hook-form for form handling (through shadcn/ui's Form component)
 
-    The backend is an Express app that uses HTTP for some routes and tRPC for others. We use the following libraries/software:
-    - WorkOS, a SaaS platform for handling authentication
-    - Stripe for handling payments
-    - Postgres for storing data
-    - Sentry for error tracking
-    - tRPC for handling API requests
-    - TypeORM for ORM (Object-Relational Mapping) for Postgres
+      The backend is an Express app that uses HTTP for some routes and tRPC for others. We use the following libraries/software:
+      - WorkOS, a SaaS platform for handling authentication
+      - Stripe for handling payments
+      - Postgres for storing data
+      - Sentry for error tracking
+      - tRPC for handling API requests
+      - TypeORM for ORM (Object-Relational Mapping) for Postgres
+    </tech_stack>
 
     The backend is structured into "entities" (database tables, defined with TypeORM), "services" (containing business logic), and "routers" (either HTTP or tRPC routers which handle auth and call the appropriate service method).
