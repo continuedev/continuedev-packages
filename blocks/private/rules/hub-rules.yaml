@@ -1,5 +1,5 @@
 name: hub.continue.dev Development Rules
-version: 0.0.1
+version: 0.0.2
 schema: v1
 
 rules:
@@ -110,6 +110,8 @@ rules:
     The frontend is a vanilla Next.js app using the App Router. We use the following libraries:
     - Tailwind for styling
     - React Query with tRPC for data fetching
+      - in server components, we use `import { trpcServer } from "@/lib/trpcClient";`
+      - in client components, we use `import { trpc } from "@/lib/trpcReact";`
     - shadcn/ui for UI components
     - react-hook-form for form handling (through shadcn/ui's Form component)
 
