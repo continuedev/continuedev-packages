@@ -1,9 +1,9 @@
-name: Tailwind CSS Docs
+name: Tailwind Docs
 version: 0.0.2
 schema: v1
 
 docs:
-  - name: Tailwind CSS docs
+  - name: Tailwind CSS
     startUrl: https://tailwindcss.com/docs/installation
     rootUrl: https://tailwindcss.com/docs
     faviconUrl: https://tailwindcss.com/favicon.ico
