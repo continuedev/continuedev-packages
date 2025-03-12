@@ -1,8 +1,0 @@
-name: PHPUnit Test Prompt
-version: 0.0.2
-schema: v1
-
-prompts:
-  - name: Write PHPUnit
-    description: Write unit test with PHPUnit
-    prompt: Use PHPUnit to write a comprehensive suite of unit tests for this function
