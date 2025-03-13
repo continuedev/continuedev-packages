@@ -1,8 +1,0 @@
-name: Java Test Prompt
-version: 0.0.1
-schema: v1
-
-prompts:
-  - name: Write JUnit
-    description: Write unit test with JUnit
-    prompt: Use JUnit to write a comprehensive suite of unit tests for this function

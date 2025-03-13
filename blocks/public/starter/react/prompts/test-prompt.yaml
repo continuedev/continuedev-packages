@@ -1,8 +1,0 @@
-name: React Testing Library Prompt
-version: 0.0.2
-schema: v1
-
-prompts:
-  - name: Write React Testing Library
-    description: Write tests with React Testing Library
-    prompt: Use React Testing Library to write a comprehensive suite of tests for this component
