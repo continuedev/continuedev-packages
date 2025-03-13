@@ -1,7 +1,0 @@
-name: Vue Guide
-version: 0.0.2
-schema: v1
-
-docs:
-  - name: Vue.js
-    startUrl: https://vuejs.org/guide/

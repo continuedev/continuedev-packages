@@ -1,8 +1,0 @@
-name: React Docs
-version: 0.0.2
-schema: v1
-
-docs:
-  - name: React docs
-    startUrl: https://reactjs.org/docs/getting-started.html
-    rootUrl: https://reactjs.org/docs/getting-started.html
