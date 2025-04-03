@@ -30,6 +30,14 @@ jobs:
           private: true
           paths: blocks/private/continuedev/**
 
+      # continuedev organization visibility blocks
+      - uses: continuedev/continue-publish-action@v1
+        with:
+          api-key: ${{ secrets.CONTINUEDEV_ORG_CONTINUE_API_KEY }}
+          owner-slug: continuedev
+          visibility: organization
+          paths: blocks/organization/continuedev/**
+
       # continuedev assistants
       - uses: continuedev/continue-publish-action@v1
         with:
