@@ -1,0 +1,13 @@
+name: Gemini 2.5 Flash
+version: 0.1.0
+schema: v1
+
+models:
+  - name: Gemini 2.5 Flash
+    provider: gemini
+    model: gemini-2.5-flash-preview-04-17
+    apiKey: ${{ inputs.GEMINI_API_KEY  }}
+    roles:
+      - chat
+      - edit
+      - apply
