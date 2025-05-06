@@ -1,6 +1,10 @@
 name: Codebase Context
-version: 0.0.1
+version: 0.0.2
 schema: v1
 
 context:
   - provider: codebase
+    params:
+      nRetrieve: ${{ inputs.nRetrieve }}
+      nFinal: ${{ inputs.nFinal }}
+      useReranking: ${{ inputs.useReranking }}
